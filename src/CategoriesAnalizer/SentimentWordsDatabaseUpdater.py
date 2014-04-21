@@ -69,6 +69,7 @@ class SentimentWordsDatabaseUpdater(object):
             self.__extract_level_words(articles_db[key], words_database['levels'], '3', feature_name)
             setattr(articles_db[key], feature_name+'_uploaded', True)
         print transaction.commit()
+
     def __extract_new_articles_keys(self, article_db, feature_name):
         articles_with_sentiment = []
         for key in article_db.keys():

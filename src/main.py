@@ -4,7 +4,7 @@ import urllib2
 from BTrees.OOBTree import OOBTree
 import re
 from storage.DatabaseFacade import DatabaseFacade
-
+from RawTextFeatureExtraction.FeatureExtractor import FeatureExtractor
 def read_articles_from_web(database):
     reader = WebReader(database)
     links = [
@@ -15,14 +15,10 @@ def read_articles_from_web(database):
         print "Extracting information from link: ", link
         reader.extract_all_articles(link)
 
-def read_features_from_web(article_db):
-    links = [
-        "http://cnn.com"
-    ]
-
-    for link in links:
-        reader = WebReader(article_db)
-        reader.extract_features_for_all_articles(link, sentiment_db)
+def read_features_from_articles(article_db, feature_db):
+    extractor = FeatureExtractor(feature_db)
+    for key in article_db.keys():
+        extractor.get_most_frequent_words_features(article_db[key])
 def get_databse_structure():
     database_structure = dict()
     database_structure['bigrams'] = []
@@ -37,7 +33,7 @@ database = DatabaseFacade("./Database.fs")
 article_db = create_articles_db(database.dbroot)
 sentiment_db = database.dbroot['sentiment_words']
 database_structure = get_databse_structure()
-read_features_from_web(article_db)
+read_features_from_articles(article_db, sentiment_db)
 # read_articles_from_web(article_db)
 sentiment_analizer = SentimentAnalizer(database, database_structure)
 sentiment_analizer.update_words_database()

@@ -23,14 +23,14 @@ class MostFrequentWordsExtractor(object):
         return self.database_root[feature_name+'_words'];
 
     def __fillDatabaseWithMostFrequentWords(self, words_database, values):
-        self.__extractBigramWords(words_database['bigrams'], values)
-        self.__extractLevelWords(words_database['levels'], '1', values)
-        self.__extractLevelWords(words_database['levels'], '2', values)
-        self.__extractLevelWords(words_database['levels'], '3', values)
+        self.__extract_bigram_words(words_database['bigrams'], values)
+        self.__extract_level_words(words_database['levels'], '1', values)
+        self.__extract_level_words(words_database['levels'], '2', values)
+        self.__extract_level_words(words_database['levels'], '3', values)
         transaction.commit()
 
-    def __extractBigramWords(self, bigrams, values):
-        print "__extractBigramWords"
+    def __extract_bigram_words(self, bigrams, values):
+        print "__extract_bigram_words"
         for value in values:
             fdist = FreqDist(bigrams[value])
             print fdist.items()[:10]
@@ -38,8 +38,8 @@ class MostFrequentWordsExtractor(object):
             bigrams._p_changed = True
             transaction.commit()
 
-    def __extractLevelWords(self, levels_db, level, values):
-        print "__extractLevelWords level: " + str(level)
+    def __extract_level_words(self, levels_db, level, values):
+        print "__extract_level_words level: " + str(level)
         for value in values:
             fdist = FreqDist()
             print "value: " + value
@@ -48,6 +48,6 @@ class MostFrequentWordsExtractor(object):
                 fdist.inc(word_dist[0], count = word_dist[1])
 
             print fdist.items()[:10]
-            levels_db[level]['most_frequent'][value] = fdist.items()[:200]
+            levels_db[level]['most_frequent'][value] = fdist.items()[:100]
             levels_db[level]._p_changed = True
             transaction.commit()
