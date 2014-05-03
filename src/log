@@ -1,0 +1,221 @@
+FeatureExtractor
+Bayes
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: positive
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+get_most_frequent_words_features article_record: 
+Feature : sentiment value: negative
+FEATUREEXTRACTOR----------------------------------------------------
+FEATUREEXTRACTOR END----------------------------------------------------
+[({u'chinese': False, u'show': False, u'visitor': False, u'month': False, u'qaeda': False, u'bomber': False, u'death': False, u'group': False, u'paris': False, u'smith': False, u'thursday': False, u'crime': False, u'iraqi': False, u'black': False, u'communication': False, u'naacp': False, u'around': False, u'get': False, u'ibrahim': False, u'game': False, u'hamilton': False, u'kid': False, u'report': False, u'world': False, u'bit': False, u'son': False, u'sunni': False, u'killed': False, u'like': False, u'georesonance': False, u'dubai': False, u'specie': False, u'bobby': False, u'artist': False, u'venue': False, u'race': False, u'polling': False, u'team': False, u'found': False, u'security': False, u'body': False, u'olympic': False, u'right': False, u'art': False, u'people': False, u'trend': False, u'back': False, u'isi': False, u'police': False, u'relative': False, u'rate': False, u'used': False, u'election': False, u'year': False, u'canada': False, u'said': False, u'looking': False, u'abu': False, u'cnn': True, u'new': False, u'bird': False, u'told': False, u'available': False, u'raqqa': False, u'amazon': False, u'parent': False, u'million': False, u'free': False, u'hulu': False, u'coates': False, u'york': False, u'news': False, u'along': False, u'wanted': False, u'water': False, u'search': False, u'talent': False, u'service': False, u'language': False, u'many': False, u'could': False, u'violence': False, u'according': False, u'airport': False, u'airline': False, u'act': False, u'mcalister': False, u'love': False, u'family': False, u'bridge': False, u'rosberg': False, u'study': False, u'seven': False, u'one': False, u'county': False, u'muslim': False, u'says': False, u'avon': False, u'turkey': False, u'city': False, u'iraq': False, u'would': False, u'area': False, u'start': False, u'attack': False, u'station': False, u'lot': False, u'valley': False, u'500': False, 'medium': False, u'storm': False, u'banksy': False, u'company': False, u'hotel': False, u'park': False, u'award': False, u'part': False, 'child': False, u'suicide': False, u'rugby': False, u'word': False, u'room': False, u'player': True, u'double': False, u'work': False, u'see': False, u'policymic': False, u'cast': False, u'behavior': False, u'learn': False, u'briefing': False, u'country': False, u'flooding': False, u'russia': False, u'claim': False, u'force': False, u'fashion': False, u'scan': False, u'lock': False, u'official': False, u'kottak': False, u'spectrum': False, u'rio': False, u'say': False, u'yemeni': False, u'want': False, u'need': False, u'syrian': False, u'autism': False, u'car': False, u'istanbul': False, u'finkelhor': False, u'travel': False, u'government': False, u'able': False, u'tour': False, u'antoine': False, u'also': False, u'animal': False, u'beach': False, u'day': False, u'pizza': False, u'sterling': False, u'even': False, u'putin': False, u'beauty': False, u'may': False, u'plane': False, u'student': False, u'ioc': False, u'man': False, u'billion': False, u'center': False, u'sale': False, u'rule': False, u'time': False, u'came': False, u'taksim': False}, 'positive'), ({u'chinese': False, u'show': True, u'visitor': False, u'month': False, u'qaeda': False, u'bomber': False, u'death': False, u'group': False, u'paris': False, u'smith': False, u'thursday': False, u'crime': False, u'iraqi': False, u'black': False, u'communication': False, u'naacp': False, u'around': False, u'get': False, u'ibrahim': False, u'game': True, u'hamilton': False, u'kid': False, u'report': False, u'world': True, u'bit': True, u'son': False, u'sunni': False, u'killed': False, u'like': False, u'georesonance': False, u'dubai': False, u'specie': False, u'bobby': False, u'artist': False, u'venue': False, u'race': False, u'polling': False, u'team': False, u'found': False, u'security': False, u'body': False, u'olympic': False, u'right': False, u'art': False, u'people': False, u'trend': False, u'back': False, u'isi': False, u'police': False, u'relative': False, u'rate': False, u'used': False, u'election': False, u'year': False, u'canada': False, u'said': False, u'looking': False, u'abu': False, u'cnn': True, u'new': False, u'bird': False, u'told': False, u'available': False, u'raqqa': False, u'amazon': False, u'parent': False, u'million': False, u'free': False, u'hulu': False, u'coates': False, u'york': False, u'news': False, u'along': True, u'wanted': False, u'water': False, u'search': False, u'talent': False, u'service': False, u'language': False, u'many': False, u'could': False, u'violence': False, u'according': False, u'airport': False, u'airline': False, u'act': False, u'mcalister': False, u'love': False, u'family': False, u'bridge': False, u'rosberg': False, u'study': False, u'seven': False, u'one': False, u'county': False, u'muslim': False, u'says': False, u'avon': False, u'turkey': False, u'city': False, u'iraq': False, u'would': False, u'area': False, u'start': False, u'attack': False, u'station': False, u'lot': False, u'valley': False, u'500': False, 'medium': False, u'storm': False, u'banksy': False, u'company': False, u'hotel': False, u'park': False, u'award': False, u'part': False, 'child': False, u'suicide': False, u'rugby': False, u'word': False, u'room': False, u'player': False, u'double': False, u'work': False, u'see': False, u'policymic': False, u'cast': True, u'behavior': False, u'learn': False, u'briefing': False, u'country': False, u'flooding': False, u'russia': False, u'claim': False, u'force': False, u'fashion': False, u'scan': False, u'lock': False, u'official': False, u'kottak': False, u'spectrum': False, u'rio': False, u'say': False, u'yemeni': False, u'want': False, u'need': False, u'syrian': False, u'autism': False, u'car': False, u'istanbul': False, u'finkelhor': False, u'travel': False, u'government': False, u'able': False, u'tour': False, u'antoine': False, u'also': False, u'animal': False, u'beach': False, u'day': False, u'pizza': False, u'sterling': False, u'even': False, u'putin': False, u'beauty': False, u'may': False, u'plane': False, u'student': False, u'ioc': False, u'man': False, u'billion': False, u'center': False, u'sale': False, u'rule': False, u'time': False, u'came': False, u'taksim': False}, 'positive'), ({u'chinese': False, u'show': False, u'visitor': False, u'month': False, u'qaeda': False, u'bomber': True, u'death': False, u'group': False, u'paris': False, u'smith': False, u'thursday': False, u'crime': False, u'iraqi': True, u'black': False, u'communication': False, u'naacp': False, u'around': False, u'get': False, u'ibrahim': False, u'game': False, u'hamilton': False, u'kid': False, u'report': False, u'world': False, u'bit': False, u'son': False, u'sunni': False, u'killed': True, u'like': False, u'georesonance': False, u'dubai': False, u'specie': False, u'bobby': False, u'artist': False, u'venue': False, u'race': False, u'polling': False, u'team': False, u'found': False, u'security': False, u'body': False, u'olympic': False, u'right': False, u'art': False, u'people': True, u'trend': False, u'back': False, u'isi': False, u'police': True, u'relative': False, u'rate': False, u'used': False, u'election': True, u'year': True, u'canada': False, u'said': True, u'looking': False, u'abu': False, u'cnn': True, u'new': False, u'bird': False, u'told': False, u'available': False, u'raqqa': False, u'amazon': False, u'parent': False, u'million': False, u'free': False, u'hulu': False, u'coates': False, u'york': False, u'news': False, u'along': False, u'wanted': False, u'water': False, u'search': False, u'talent': False, u'service': False, u'language': False, u'many': False, u'could': False, u'violence': True, u'according': False, u'airport': False, u'airline': False, u'act': False, u'mcalister': False, u'love': False, u'family': False, u'bridge': False, u'rosberg': False, u'study': False, u'seven': False, u'one': False, u'county': False, u'muslim': False, u'says': False, u'avon': False, u'turkey': False, u'city': False, u'iraq': True, u'would': False, u'area': False, u'start': False, u'attack': True, u'station': False, u'lot': False, u'valley': False, u'500': False, 'medium': False, u'storm': False, u'banksy': False, u'company': False, u'hotel': False, u'park': False, u'award': False, u'part': False, 'child': False, u'suicide': False, u'rugby': False, u'word': False, u'room': False, u'player': False, u'double': False, u'work': False, u'see': False, u'policymic': False, u'cast': True, u'behavior': False, u'learn': False, u'briefing': False, u'country': True, u'flooding': False, u'russia': False, u'claim': False, u'force': True, u'fashion': False, u'scan': False, u'lock': False, u'official': False, u'kottak': False, u'spectrum': False, u'rio': False, u'say': False, u'yemeni': False, u'want': False, u'need': False, u'syrian': False, u'autism': False, u'car': False, u'istanbul': False, u'finkelhor': False, u'travel': False, u'government': False, u'able': False, u'tour': False, u'antoine': False, u'also': False, u'animal': False, u'beach': False, u'day': False, u'pizza': False, u'sterling': False, u'even': False, u'putin': False, u'beauty': False, u'may': False, u'plane': False, u'student': False, u'ioc': False, u'man': False, u'billion': False, u'center': True, u'sale': False, u'rule': False, u'time': False, u'came': True, u'taksim': False}, 'negative'), ({u'chinese': False, u'show': False, u'visitor': False, u'month': False, u'qaeda': False, u'bomber': False, u'death': False, u'group': False, u'paris': False, u'smith': False, u'thursday': False, u'crime': False, u'iraqi': False, u'black': False, u'communication': False, u'naacp': False, u'around': False, u'get': False, u'ibrahim': False, u'game': False, u'hamilton': False, u'kid': False, u'report': False, u'world': False, u'bit': False, u'son': False, u'sunni': False, u'killed': False, u'like': False, u'georesonance': False, u'dubai': False, u'specie': False, u'bobby': False, u'artist': False, u'venue': False, u'race': False, u'polling': False, u'team': False, u'found': False, u'security': False, u'body': False, u'olympic': False, u'right': False, u'art': False, u'people': False, u'trend': False, u'back': False, u'isi': False, u'police': False, u'relative': False, u'rate': False, u'used': False, u'election': False, u'year': False, u'canada': False, u'said': False, u'looking': False, u'abu': False, u'cnn': False, u'new': False, u'bird': False, u'told': False, u'available': True, u'raqqa': False, u'amazon': False, u'parent': False, u'million': False, u'free': False, u'hulu': False, u'coates': False, u'york': False, u'news': False, u'along': False, u'wanted': False, u'water': False, u'search': False, u'talent': False, u'service': False, u'language': False, u'many': False, u'could': False, u'violence': False, u'according': False, u'airport': False, u'airline': True, u'act': False, u'mcalister': False, u'love': False, u'family': False, u'bridge': False, u'rosberg': False, u'study': False, u'seven': False, u'one': False, u'county': False, u'muslim': False, u'says': False, u'avon': False, u'turkey': False, u'city': False, u'iraq': False, u'would': False, u'area': False, u'start': False, u'attack': False, u'station': False, u'lot': False, u'valley': False, u'500': True, 'medium': False, u'storm': False, u'banksy': False, u'company': True, u'hotel': False, u'park': False, u'award': False, u'part': False, 'child': False, u'suicide': False, u'rugby': False, u'word': False, u'room': False, u'player': False, u'double': False, u'work': False, u'see': False, u'policymic': False, u'cast': False, u'behavior': False, u'learn': False, u'briefing': False, u'country': False, u'flooding': False, u'russia': False, u'claim': True, u'force': False, u'fashion': False, u'scan': False, u'lock': False, u'official': False, u'kottak': False, u'spectrum': True, u'rio': False, u'say': False, u'yemeni': False, u'want': False, u'need': False, u'syrian': False, u'autism': False, u'car': False, u'istanbul': False, u'finkelhor': False, u'travel': False, u'government': False, u'able': False, u'tour': False, u'antoine': False, u'also': False, u'animal': False, u'beach': False, u'day': False, u'pizza': False, u'sterling': False, u'even': False, u'putin': False, u'beauty': False, u'may': False, u'plane': False, u'student': False, u'ioc': False, u'man': False, u'billion': False, u'center': False, u'sale': False, u'rule': False, u'time': False, u'came': False, u'taksim': False}, 'positive'), ({u'chinese': False, u'show': False, u'visitor': True, u'month': False, u'qaeda': False, u'bomber': False, u'death': False, u'group': False, u'paris': False, u'smith': False, u'thursday': False, u'crime': False, u'iraqi': False, u'black': False, u'communication': False, u'naacp': False, u'around': False, u'get': False, u'ibrahim': False, u'game': False, u'hamilton': False, u'kid': False, u'report': False, u'world': False, u'bit': False, u'son': False, u'sunni': False, u'killed': False, u'like': False, u'georesonance': False, u'dubai': False, u'specie': False, u'bobby': False, u'artist': False, u'venue': False, u'race': False, u'polling': False, u'team': False, u'found': False, u'security': False, u'body': False, u'olympic': False, u'right': False, u'art': False, u'people': False, u'trend': False, u'back': False, u'isi': False, u'police': False, u'relative': False, u'rate': False, u'used': False, u'election': False, u'year': True, u'canada': True, u'said': True, u'looking': False, u'abu': False, u'cnn': False, u'new': False, u'bird': False, u'told': False, u'available': False, u'raqqa': False, u'amazon': False, u'parent': False, u'million': True, u'free': False, u'hulu': False, u'coates': False, u'york': False, u'news': True, u'along': False, u'wanted': False, u'water': False, u'search': False, u'talent': False, u'service': False, u'language': False, u'many': False, u'could': False, u'violence': False, u'according': False, u'airport': False, u'airline': False, u'act': False, u'mcalister': False, u'love': False, u'family': False, u'bridge': False, u'rosberg': False, u'study': False, u'seven': False, u'one': False, u'county': False, u'muslim': False, u'says': False, u'avon': False, u'turkey': False, u'city': False, u'iraq': False, u'would': False, u'area': False, u'start': False, u'attack': False, u'station': False, u'lot': False, u'valley': False, u'500': False, 'medium': False, u'storm': False, u'banksy': False, u'company': False, u'hotel': False, u'park': True, u'award': False, u'part': False, 'child': False, u'suicide': False, u'rugby': False, u'word': False, u'room': False, u'player': False, u'double': False, u'work': False, u'see': False, u'policymic': False, u'cast': False, u'behavior': False, u'learn': False, u'briefing': False, u'country': False, u'flooding': False, u'russia': False, u'claim': False, u'force': False, u'fashion': False, u'scan': False, u'lock': False, u'official': True, u'kottak': False, u'spectrum': False, u'rio': False, u'say': True, u'yemeni': False, u'want': False, u'need': True, u'syrian': False, u'autism': False, u'car': False, u'istanbul': False, u'finkelhor': False, u'travel': True, u'government': False, u'able': False, u'tour': False, u'antoine': False, u'also': False, u'animal': False, u'beach': False, u'day': False, u'pizza': False, u'sterling': False, u'even': False, u'putin': False, u'beauty': False, u'may': True, u'plane': False, u'student': False, u'ioc': False, u'man': False, u'billion': False, u'center': False, u'sale': False, u'rule': False, u'time': False, u'came': False, u'taksim': False}, 'positive'), ({u'chinese': False, u'show': True, u'visitor': False, u'month': True, u'qaeda': False, u'bomber': False, u'death': False, u'group': False, u'paris': False, u'smith': False, u'thursday': False, u'crime': False, u'iraqi': False, u'black': False, u'communication': False, u'naacp': False, u'around': False, u'get': False, u'ibrahim': False, u'game': False, u'hamilton': False, u'kid': False, u'report': False, u'world': False, u'bit': False, u'son': False, u'sunni': False, u'killed': False, u'like': False, u'georesonance': False, u'dubai': False, u'specie': False, u'bobby': False, u'artist': False, u'venue': False, u'race': False, u'polling': False, u'team': False, u'found': False, u'security': False, u'body': False, u'olympic': False, u'right': False, u'art': False, u'people': False, u'trend': False, u'back': False, u'isi': False, u'police': False, u'relative': False, u'rate': False, u'used': False, u'election': False, u'year': True, u'canada': False, u'said': False, u'looking': False, u'abu': False, u'cnn': False, u'new': False, u'bird': False, u'told': False, u'available': False, u'raqqa': False, u'amazon': True, u'parent': False, u'million': False, u'free': False, u'hulu': False, u'coates': False, u'york': False, u'news': False, u'along': False, u'wanted': False, u'water': False, u'search': False, u'talent': False, u'service': False, u'language': False, u'many': False, u'could': False, u'violence': False, u'according': False, u'airport': False, u'airline': False, u'act': False, u'mcalister': False, u'love': False, u'family': False, u'bridge': False, u'rosberg': False, u'study': False, u'seven': False, u'one': True, u'county': False, u'muslim': False, u'says': False, u'avon': False, u'turkey': False, u'city': False, u'iraq': False, u'would': False, u'area': False, u'start': False, u'attack': False, u'station': False, u'lot': False, u'valley': False, u'500': True, 'medium': False, u'storm': False, u'banksy': False, u'company': True, u'hotel': False, u'park': False, u'award': False, u'part': False, 'child': False, u'suicide': False, u'rugby': False, u'word': False, u'room': False, u'player': False, u'double': False, u'work': False, u'see': False, u'policymic': False, u'cast': False, u'behavior': False, u'learn': False, u'briefing': False, u'country': False, u'flooding': False, u'russia': False, u'claim': False, u'force': False, u'fashion': False, u'scan': False, u'lock': False, u'official': False, u'kottak': False, u'spectrum': False, u'rio': False, u'say': True, u'yemeni': False, u'want': False, u'need': False, u'syrian': False, u'autism': False, u'car': False, u'istanbul': False, u'finkelhor': False, u'travel': False, u'government': False, u'able': False, u'tour': True, u'antoine': False, u'also': True, u'animal': False, u'beach': False, u'day': False, u'pizza': False, u'sterling': False, u'even': False, u'putin': False, u'beauty': False, u'may': False, u'plane': False, u'student': False, u'ioc': False, u'man': False, u'billion': False, u'center': True, u'sale': False, u'rule': False, u'time': False, u'came': False, u'taksim': False}, 'positive'), ({u'chinese': False, u'show': False, u'visitor': True, u'month': True, u'qaeda': False, u'bomber': False, u'death': False, u'group': False, u'paris': False, u'smith': False, u'thursday': False, u'crime': False, u'iraqi': False, u'black': False, u'communication': False, u'naacp': False, u'around': False, u'get': False, u'ibrahim': False, u'game': False, u'hamilton': False, u'kid': False, u'report': False, u'world': False, u'bit': False, u'son': False, u'sunni': False, u'killed': False, u'like': True, u'georesonance': False, u'dubai': False, u'specie': False, u'bobby': False, u'artist': False, u'venue': False, u'race': False, u'polling': False, u'team': False, u'found': False, u'security': False, u'body': False, u'olympic': False, u'right': False, u'art': False, u'people': True, u'trend': False, u'back': False, u'isi': False, u'police': False, u'relative': False, u'rate': False, u'used': False, u'election': False, u'year': False, u'canada': False, u'said': True, u'looking': False, u'abu': False, u'cnn': False, u'new': True, u'bird': False, u'told': False, u'available': False, u'raqqa': False, u'amazon': False, u'parent': False, u'million': True, u'free': False, u'hulu': False, u'coates': False, u'york': False, u'news': True, u'along': False, u'wanted': False, u'water': False, u'search': False, u'talent': False, u'service': False, u'language': False, u'many': False, u'could': False, u'violence': False, u'according': False, u'airport': False, u'airline': False, u'act': False, u'mcalister': False, u'love': False, u'family': False, u'bridge': False, u'rosberg': False, u'study': False, u'seven': False, u'one': False, u'county': False, u'muslim': False, u'says': False, u'avon': False, u'turkey': False, u'city': False, u'iraq': False, u'would': False, u'area': False, u'start': False, u'attack': False, u'station': False, u'lot': False, u'valley': False, u'500': False, 'medium': True, u'storm': False, u'banksy': False, u'company': True, u'hotel': False, u'park': False, u'award': False, u'part': False, 'child': False, u'suicide': False, u'rugby': False, u'word': False, u'room': False, u'player': False, u'double': False, u'work': False, u'see': False, u'policymic': True, u'cast': False, u'behavior': False, u'learn': False, u'briefing': False, u'country': False, u'flooding': False, u'russia': False, u'claim': False, u'force': False, u'fashion': False, u'scan': False, u'lock': False, u'official': False, u'kottak': False, u'spectrum': False, u'rio': False, u'say': False, u'yemeni': False, u'want': False, u'need': False, u'syrian': False, u'autism': False, u'car': False, u'istanbul': False, u'finkelhor': False, u'travel': False, u'government': False, u'able': False, u'tour': False, u'antoine': False, u'also': True, u'animal': False, u'beach': False, u'day': False, u'pizza': False, u'sterling': False, u'even': False, u'putin': False, u'beauty': False, u'may': False, u'plane': False, u'student': False, u'ioc': False, u'man': False, u'billion': False, u'center': False, u'sale': False, u'rule': False, u'time': False, u'came': False, u'taksim': False}, 'positive'), ({u'chinese': False, u'show': False, u'visitor': False, u'month': False, u'qaeda': False, u'bomber': False, u'death': False, u'group': False, u'paris': False, u'smith': False, u'thursday': False, u'crime': False, u'iraqi': False, u'black': False, u'communication': False, u'naacp': False, u'around': False, u'get': False, u'ibrahim': False, u'game': False, u'hamilton': False, u'kid': False, u'report': False, u'world': False, u'bit': False, u'son': False, u'sunni': False, u'killed': False, u'like': False, u'georesonance': False, u'dubai': False, u'specie': False, u'bobby': False, u'artist': False, u'venue': False, u'race': False, u'polling': False, u'team': False, u'found': False, u'security': False, u'body': False, u'olympic': False, u'right': False, u'art': False, u'people': False, u'trend': False, u'back': False, u'isi': False, u'police': False, u'relative': False, u'rate': False, u'used': False, u'election': False, u'year': False, u'canada': False, u'said': False, u'looking': False, u'abu': False, u'cnn': True, u'new': False, u'bird': False, u'told': False, u'available': False, u'raqqa': False, u'amazon': False, u'parent': False, u'million': False, u'free': False, u'hulu': False, u'coates': False, u'york': False, u'news': False, u'along': False, u'wanted': False, u'water': False, u'search': False, u'talent': False, u'service': False, u'language': False, u'many': False, u'could': False, u'violence': False, u'according': False, u'airport': False, u'airline': False, u'act': False, u'mcalister': False, u'love': False, u'family': False, u'bridge': False, u'rosberg': False, u'study': False, u'seven': False, u'one': True, u'county': False, u'muslim': False, u'says': False, u'avon': False, u'turkey': False, u'city': False, u'iraq': False, u'would': False, u'area': False, u'start': False, u'attack': False, u'station': False, u'lot': False, u'valley': False, u'500': False, 'medium': False, u'storm': False, u'banksy': False, u'company': False, u'hotel': False, u'park': False, u'award': False, u'part': False, 'child': False, u'suicide': False, u'rugby': False, u'word': False, u'room': False, u'player': True, u'double': False, u'work': False, u'see': False, u'policymic': False, u'cast': False, u'behavior': False, u'learn': False, u'briefing': False, u'country': False, u'flooding': False, u'russia': False, u'claim': True, u'force': False, u'fashion': False, u'scan': False, u'lock': False, u'official': False, u'kottak': False, u'spectrum': False, u'rio': False, u'say': False, u'yemeni': False, u'want': False, u'need': False, u'syrian': False, u'autism': False, u'car': False, u'istanbul': False, u'finkelhor': False, u'travel': False, u'government': False, u'able': False, u'tour': False, u'antoine': False, u'also': False, u'animal': False, u'beach': False, u'day': False, u'pizza': False, u'sterling': False, u'even': False, u'putin': False, u'beauty': False, u'may': False, u'plane': False, u'student': False, u'ioc': False, u'man': False, u'billion': False, u'center': False, u'sale': False, u'rule': False, u'time': False, u'came': False, u'taksim': False}, 'negative'), ({u'chinese': False, u'show': False, u'visitor': False, u'month': True, u'qaeda': False, u'bomber': False, u'death': False, u'group': False, u'paris': False, u'smith': True, u'thursday': False, u'crime': False, u'iraqi': False, u'black': False, u'communication': True, u'naacp': False, u'around': False, u'get': False, u'ibrahim': False, u'game': False, u'hamilton': False, u'kid': False, u'report': False, u'world': True, u'bit': False, u'son': True, u'sunni': False, u'killed': False, u'like': True, u'georesonance': False, u'dubai': False, u'specie': False, u'bobby': True, u'artist': False, u'venue': False, u'race': False, u'polling': False, u'team': False, u'found': False, u'security': False, u'body': False, u'olympic': False, u'right': False, u'art': False, u'people': False, u'trend': False, u'back': False, u'isi': False, u'police': False, u'relative': False, u'rate': False, u'used': False, u'election': False, u'year': False, u'canada': False, u'said': True, u'looking': False, u'abu': False, u'cnn': False, u'new': False, u'bird': False, u'told': False, u'available': False, u'raqqa': False, u'amazon': False, u'parent': True, u'million': False, u'free': False, u'hulu': False, u'coates': False, u'york': False, u'news': False, u'along': False, u'wanted': True, u'water': False, u'search': False, u'talent': False, u'service': False, u'language': True, u'many': False, u'could': True, u'violence': False, u'according': False, u'airport': False, u'airline': False, u'act': False, u'mcalister': False, u'love': False, u'family': False, u'bridge': False, u'rosberg': False, u'study': False, u'seven': False, u'one': True, u'county': False, u'muslim': False, u'says': False, u'avon': False, u'turkey': False, u'city': False, u'iraq': False, u'would': True, u'area': False, u'start': False, u'attack': False, u'station': False, u'lot': False, u'valley': False, u'500': False, 'medium': False, u'storm': False, u'banksy': False, u'company': False, u'hotel': False, u'park': False, u'award': False, u'part': False, 'child': True, u'suicide': False, u'rugby': False, u'word': True, u'room': False, u'player': False, u'double': False, u'work': True, u'see': False, u'policymic': False, u'cast': False, u'behavior': False, u'learn': True, u'briefing': False, u'country': False, u'flooding': False, u'russia': False, u'claim': False, u'force': False, u'fashion': False, u'scan': False, u'lock': False, u'official': False, u'kottak': False, u'spectrum': True, u'rio': False, u'say': True, u'yemeni': False, u'want': True, u'need': False, u'syrian': False, u'autism': True, u'car': True, u'istanbul': False, u'finkelhor': False, u'travel': False, u'government': False, u'able': True, u'tour': False, u'antoine': False, u'also': False, u'animal': True, u'beach': False, u'day': False, u'pizza': False, u'sterling': False, u'even': False, u'putin': False, u'beauty': False, u'may': False, u'plane': False, u'student': True, u'ioc': False, u'man': False, u'billion': False, u'center': False, u'sale': False, u'rule': False, u'time': True, u'came': False, u'taksim': False}, 'positive'), ({u'chinese': False, u'show': False, u'visitor': False, u'month': False, u'qaeda': False, u'bomber': False, u'death': False, u'group': False, u'paris': False, u'smith': False, u'thursday': False, u'crime': False, u'iraqi': False, u'black': True, u'communication': False, u'naacp': False, u'around': False, u'get': False, u'ibrahim': False, u'game': False, u'hamilton': False, u'kid': False, u'report': True, u'world': False, u'bit': False, u'son': False, u'sunni': False, u'killed': False, u'like': False, u'georesonance': False, u'dubai': False, u'specie': True, u'bobby': False, u'artist': False, u'venue': False, u'race': False, u'polling': False, u'team': False, u'found': True, u'security': False, u'body': False, u'olympic': False, u'right': False, u'art': False, u'people': False, u'trend': False, u'back': False, u'isi': False, u'police': False, u'relative': False, u'rate': False, u'used': True, u'election': False, u'year': False, u'canada': False, u'said': True, u'looking': False, u'abu': False, u'cnn': True, u'new': False, u'bird': False, u'told': False, u'available': False, u'raqqa': False, u'amazon': False, u'parent': False, u'million': False, u'free': False, u'hulu': False, u'coates': False, u'york': False, u'news': False, u'along': False, u'wanted': False, u'water': False, u'search': False, u'talent': False, u'service': False, u'language': False, u'many': True, u'could': False, u'violence': False, u'according': False, u'airport': False, u'airline': False, u'act': False, u'mcalister': False, u'love': False, u'family': False, u'bridge': False, u'rosberg': False, u'study': False, u'seven': False, u'one': True, u'county': False, u'muslim': False, u'says': False, u'avon': False, u'turkey': False, u'city': False, u'iraq': False, u'would': False, u'area': False, u'start': False, u'attack': False, u'station': False, u'lot': False, u'valley': False, u'500': False, 'medium': False, u'storm': False, u'banksy': False, u'company': False, u'hotel': False, u'park': False, u'award': False, u'part': False, 'child': False, u'suicide': False, u'rugby': False, u'word': False, u'room': False, u'player': False, u'double': False, u'work': False, u'see': True, u'policymic': False, u'cast': False, u'behavior': False, u'learn': False, u'briefing': False, u'country': False, u'flooding': False, u'russia': False, u'claim': False, u'force': False, u'fashion': False, u'scan': False, u'lock': False, u'official': True, u'kottak': False, u'spectrum': False, u'rio': False, u'say': True, u'yemeni': False, u'want': False, u'need': False, u'syrian': False, u'autism': False, u'car': False, u'istanbul': False, u'finkelhor': False, u'travel': False, u'government': False, u'able': False, u'tour': False, u'antoine': False, u'also': False, u'animal': True, u'beach': False, u'day': False, u'pizza': False, u'sterling': False, u'even': False, u'putin': False, u'beauty': False, u'may': False, u'plane': False, u'student': False, u'ioc': False, u'man': False, u'billion': False, u'center': False, u'sale': False, u'rule': False, u'time': False, u'came': False, u'taksim': False}, 'positive')]
+testClasifier, accuracy:
+0.5
+Most Informative Features
+                   claim = True           negati : positi =      2.7 : 1.0
+                    cast = True           negati : positi =      2.7 : 1.0
+                  center = True           negati : positi =      2.7 : 1.0
+                  people = True           negati : positi =      2.7 : 1.0
+                  player = True           negati : positi =      2.7 : 1.0
+----------------------------------
+bigrams : 
+	Value: negative
+bigrams : 621
+	Value: positive
+bigrams : 795
+----------------------------------
+levels : 
+	1 : 
+	Value: negative
+Key: levels , inner_key: 1 , value: negative
+		627
+	Value: positive
+Key: levels , inner_key: 1 , value: positive
+		803
+	2 : 
+	Value: negative
+Key: levels , inner_key: 2 , value: negative
+		617
+	Value: positive
+Key: levels , inner_key: 2 , value: positive
+		792
+	3 : 
+	Value: negative
+Key: levels , inner_key: 3 , value: negative
+		617
+	Value: positive
+Key: levels , inner_key: 3 , value: positive
+		792
+END--------------------------------
+articles_with_sentiment len: 38
+Articles to be proceeded: 0
+None
+__extract_bigram_words
+[((u'adobe', 'gaudiness'), 2), ((u'browser', u'adobe'), 2), ((u'click', u'play'), 2), (('deadliness', u'year'), 2), (('gaudiness', u'player'), 2), ((u'installed', u'click'), 2), ((u'otherwise', u'click'), 2), ((u'play', u'otherwise'), 2), ((u'player', u'installed'), 2), ((u'180', u'190'), 1)]
+[(('adjacency', u'month'), 2), ((u'chief', u'executive'), 2), ((u'editor', u'note'), 2), ((u'fortune', u'500'), 2), ((u'100', u'vocabulary'), 1), ((u'1000', u'pound'), 1), ((u'1940s', u'exterior'), 1), ((u'1950s', u'film'), 1), ((u'1950s', u'sits'), 1), ((u'1990s', 'proficiency'), 1)]
+__extract_level_words level: 1
+value: negative
+len: 627
+[(u'said', 84), (u'cnn', 35), (u'would', 21), (u'group', 20), (u'official', 20), (u'one', 19), (u'avon', 18), (u'company', 17), (u'day', 17), (u'also', 16)]
+value: positive
+len: 803
+[(u'said', 54), (u'also', 32), (u'like', 32), ('child', 31), (u'new', 23), (u'one', 23), (u'say', 22), (u'bird', 21), (u'violence', 20), (u'company', 19)]
+__extract_level_words level: 2
+value: negative
+len: 617
+[(u'said', 87), (u'people', 32), (u'area', 29), (u'city', 29), (u'group', 28), (u'muslim', 26), (u'official', 20), (u'avon', 18), (u'day', 18), (u'company', 17)]
+value: positive
+len: 792
+[(u'said', 58), (u'activity', 32), (u'also', 32), (u'child', 32), (u'like', 32), (u'building', 26), (u'bird', 23), (u'new', 23), (u'one', 23), (u'work', 21)]
+__extract_level_words level: 3
+value: negative
+len: 617
+[(u'said', 87), (u'people', 32), ('islam', 30), (u'area', 29), (u'city', 29), ('office', 29), (u'group', 28), (u'avon', 18), (u'day', 18), (u'also', 17)]
+value: positive
+len: 792
+[(u'said', 58), (u'activity', 32), (u'also', 32), (u'child', 32), ('likeness', 32), (u'building', 26), (u'bird', 23), ('newness', 23), ('oneness', 23), (u'violence', 23)]
+Database contains 2 articles parsed

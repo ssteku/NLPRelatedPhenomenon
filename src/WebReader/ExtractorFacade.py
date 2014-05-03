@@ -1,5 +1,6 @@
 import newspaper
 from newspaper import Article
+
 class ExtractorFacade(object):
     """ExtractorFacade class hiding dependencies"""
     """ to text from web extraction libs """

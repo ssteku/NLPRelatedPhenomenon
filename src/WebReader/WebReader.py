@@ -7,6 +7,7 @@ import transaction
 from RawTextFeatureExtraction.FeatureExtractor import FeatureExtractor
 from BTrees.OOBTree import OOBTree
 current_version = 1
+import langid
 class WebReader(object):
     def __init__(self, database):
         self.database = database
@@ -18,17 +19,34 @@ class WebReader(object):
         bigrams_extractor = BigramsExtractor()
         extractor = ExtractorFacade(url)
         articles = extractor.get_article_list()
+        self.__print_article_list(articles)
         for article in articles:
             self.__parse_article(article)
-            self.__extract_article(article, article_db, freq, bigrams_extractor)
+            if self.__article_in_english(article):
+                self.__extract_article(article, article_db, freq, bigrams_extractor)
+            else:
+                print "----------> Article: " + article.title + " is not in english <------------"
 
-    def extract_features_for_all_articles(self, url, feature_database):
-        extractor = FeatureExtractor(feature_database)
-        extractor_facase = ExtractorFacade(url)
-        articles = extractor_facase.get_article_list()
-        for article in articles:
-            self.__parse_article(article)
-            extractor.get_most_frequent_words_features(article)
+    # def extract_features_for_all_articles(self, url, feature_database):
+    #     extractor = FeatureExtractor(feature_database)
+    #     extractor_facase = ExtractorFacade(url)
+    #     articles = extractor_facase.get_article_list()
+
+    #     for article in articles:
+    #         self.__parse_article(article)
+    #         extractor.get_most_frequent_words_features(article)
+
+    def __article_in_english(self, article):
+        result = langid.classify(article.text)
+        return result[0] == 'en' and result[1] > 0.85
+
+
+
+    def __print_article_list(self, article_list):
+        print "--------------Parsing articles---------------"
+        for article in article_list:
+            print article.title
+        print "---------------------------------------------"
 
     def __extract_article(self, article, article_db, freq, bigrams_extractor):
         if self.__should_be_stored(article, article_db):
@@ -55,7 +73,7 @@ class WebReader(object):
             article.download()
             article.parse()
             article.nlp()
-        except IOError:
+        except Exception:
             print "File parsing failed"
 
     def __create_article_record(self, freq_words_levels, bigrams, article):

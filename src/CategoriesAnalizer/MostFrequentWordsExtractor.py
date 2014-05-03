@@ -30,24 +30,18 @@ class MostFrequentWordsExtractor(object):
         transaction.commit()
 
     def __extract_bigram_words(self, bigrams, values):
-        print "__extract_bigram_words"
         for value in values:
             fdist = FreqDist(bigrams[value])
-            print fdist.items()[:10]
             bigrams['most_frequent'][value] = fdist.items()[:40]
             bigrams._p_changed = True
             transaction.commit()
 
     def __extract_level_words(self, levels_db, level, values):
-        print "__extract_level_words level: " + str(level)
         for value in values:
             fdist = FreqDist()
-            print "value: " + value
-            print 'len: ' + str(len(levels_db[level][value]))
             for word_dist in levels_db[level][value]:
                 fdist.inc(word_dist[0], count = word_dist[1])
 
-            print fdist.items()[:10]
             levels_db[level]['most_frequent'][value] = fdist.items()[:100]
             levels_db[level]._p_changed = True
             transaction.commit()
