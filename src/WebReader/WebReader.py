@@ -9,9 +9,9 @@ from BTrees.OOBTree import OOBTree
 current_version = 1
 import langid
 class WebReader(object):
-    def __init__(self, database):
+    def __init__(self, database, configuration_map):
         self.database = database
-
+        self.__configuration_map = configuration_map
     def extract_all_articles(self, url):
 
         article_db = self.database
@@ -19,7 +19,7 @@ class WebReader(object):
         bigrams_extractor = BigramsExtractor()
         extractor = ExtractorFacade(url)
         articles = extractor.get_article_list()
-        self.__print_article_list(articles)
+        # self.__print_article_list(articles)
         for article in articles:
             self.__parse_article(article)
             if self.__article_in_english(article):
@@ -38,9 +38,8 @@ class WebReader(object):
 
     def __article_in_english(self, article):
         result = langid.classify(article.text)
-        return result[0] == 'en' and result[1] > 0.85
-
-
+        minimum_probability = self.__configuration_map['language_match_minimum_probability']
+        return result[0] == 'en' and result[1] > minimum_probability
 
     def __print_article_list(self, article_list):
         print "--------------Parsing articles---------------"
@@ -52,7 +51,8 @@ class WebReader(object):
         if self.__should_be_stored(article, article_db):
             print "Processing article: " + article.title
 
-            freq_words_levels = freq.get_most_frequent(article.text, number = 40)
+            number_of_words_from_article = self.__configuration_map['number_of_words_extracted_from_article']
+            freq_words_levels = freq.get_most_frequent(article.text, number = number_of_words_from_article)
             bigrams = bigrams_extractor.get_bigrams(article.text)
 
             article_record = self.__create_article_record(freq_words_levels, bigrams, article)
@@ -66,7 +66,8 @@ class WebReader(object):
 
 
     def __should_be_stored(self, article, article_db):
-        return len(article.text) > 200 and not article_db.has_key(article.title)
+        article_minimum_words_number = self.__configuration_map['article_minimum_words_number']
+        return len(article.text) > article_minimum_words_number and not article_db.has_key(article.title)
 
     def __parse_article(self, article):
         try:

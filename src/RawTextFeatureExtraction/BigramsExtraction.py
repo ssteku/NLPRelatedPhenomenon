@@ -10,10 +10,11 @@ class BigramsExtractor(TokensCleaner):
     def __init__(self):
         super(BigramsExtractor, self).__init__()
 
+    # TODO configuration value
     def get_bigrams(self, rawText, score_fn=BigramAssocMeasures.pmi, n=40):
+        # TODO configuration value
     	clean_text = TokensCleaner.clean(self, rawText, cleaning_level=3)
         bigram_finder = BigramCollocationFinder.from_words(clean_text['3'])
         bigram_measures = BigramAssocMeasures()
         bigrams = bigram_finder.nbest(bigram_measures.pmi, n)
-        # print bigrams
         return bigrams

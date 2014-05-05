@@ -38,6 +38,7 @@ class RelatedWordsCleaner(object):
                 if similarity_level == None or shortest_path_distance == None:
                     continue;
 
+                # TODO configuration value
                 if similarity_level > 0.9 or shortest_path_distance < 2:
                     if smallest_depth > word2_depth:
                         final_word = word2
