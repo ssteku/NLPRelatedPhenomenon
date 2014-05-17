@@ -2,6 +2,8 @@ from sets import Set
 from nltk.corpus import wordnet as wn
 
 class RelatedWordsCleaner(object):
+    def __init__(self, configuration_map):
+        self__configuration_map = configuration_map
 
     def get_cleaned_tokens(self, tokens):
         final_tokens = []
@@ -39,7 +41,9 @@ class RelatedWordsCleaner(object):
                     continue;
 
                 # TODO configuration value
-                if similarity_level > 0.9 or shortest_path_distance < 2:
+                min_similarity_level = self.__configuration_map['related_words_minimum_similarity_level']
+                max_distance = self.__configuration_map['related_words_maximum_path_distance']
+                if similarity_level > min_similarity_level or shortest_path_distance < max_distance:
                     if smallest_depth > word2_depth:
                         final_word = word2
                         # print "Replacing words: "+first_word+" to "+word2

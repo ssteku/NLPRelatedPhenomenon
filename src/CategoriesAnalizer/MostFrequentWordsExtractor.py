@@ -3,48 +3,44 @@ from nltk import FreqDist
 import transaction
 
 class MostFrequentWordsExtractor(object):
-    def __init__(self, database, database_structure, configuration_map):
-        self.database_root = database
-        self.database_structure = database_structure
+    def __init__(self, feature_data, configuration_map):
+        self.feature_data = feature_data
         self.__configuration_map = configuration_map
 
     def get_most_frequent_words_from_db(self, feature_name):
-        words_database = self.__get_feature_database(feature_name)
-        return words_database['levels']
+        return self.feature_data['levels']
 
     def get_most_frequent_bigrams_from_db(self, feature_name):
-        words_database = self.__get_feature_database(feature_name)
-        return words_database['bigrams']
+        return self.feature_data['bigrams']
 
     def update_most_frequent_words_in_db(self, feature_name, values):
-        words_database = self.__get_feature_database(feature_name)
-        self.__fillDatabaseWithMostFrequentWords(words_database, values)
+        return self.__fillDatabaseWithMostFrequentWords(self.feature_data, values)
 
-    def __get_feature_database(self, feature_name):
-        return self.database_root[feature_name+'_words'];
 
     def __fillDatabaseWithMostFrequentWords(self, words_database, values):
-        self.__extract_bigram_words(words_database['bigrams'], values)
-        self.__extract_level_words(words_database['levels'], '1', values)
-        self.__extract_level_words(words_database['levels'], '2', values)
-        self.__extract_level_words(words_database['levels'], '3', values)
-        transaction.commit()
+        most_frequent_data = {}
+        most_frequent_data['bigrams'] = self.__extract_bigram_words(words_database['bigrams'], values)
+        most_frequent_data['levels'] = {}
+        most_frequent_data['levels']['1'] = self.__extract_level_words(words_database['levels'], '1', values)
+        most_frequent_data['levels']['2'] = self.__extract_level_words(words_database['levels'], '2', values)
+        most_frequent_data['levels']['3'] = self.__extract_level_words(words_database['levels'], '3', values)
+        return most_frequent_data
 
     def __extract_bigram_words(self, bigrams, values):
         bigrams_number_per_value = self.__configuration_map["most_frequent_bigrams_number_per_value"]
+        most_frequent_bigrams = {}
         for value in values:
             fdist = FreqDist(bigrams[value])
-            bigrams['most_frequent'][value] = fdist.items()[:bigrams_number_per_value]
-            bigrams._p_changed = True
-            transaction.commit()
+            most_frequent_bigrams[value] = fdist.items()[:bigrams_number_per_value]
+        return most_frequent_bigrams
 
     def __extract_level_words(self, levels_db, level, values):
         words_number_per_value = self.__configuration_map["most_frequent_words_number_per_value"]
+        most_freq_words = {}
         for value in values:
             fdist = FreqDist()
             for word_dist in levels_db[level][value]:
                 fdist.inc(word_dist[0], count = word_dist[1])
 
-            levels_db[level]['most_frequent'][value] = fdist.items()[:words_number_per_value]
-            levels_db[level]._p_changed = True
-            transaction.commit()
+            most_freq_words[value] = fdist.items()[:words_number_per_value]
+        return most_freq_words

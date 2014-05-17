@@ -15,7 +15,7 @@ class WebReader(object):
     def extract_all_articles(self, url):
 
         article_db = self.database
-        freq = MostFrequentWordsExtractor()
+        freq = MostFrequentWordsExtractor(configuration_map)
         bigrams_extractor = BigramsExtractor()
         extractor = ExtractorFacade(url)
         articles = extractor.get_article_list()

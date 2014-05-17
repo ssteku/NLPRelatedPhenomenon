@@ -19,7 +19,7 @@ def manual_clasification(feature = 'sentiment', values = ['negative', 'positive'
         transaction.commit()
         print feature+' : %s \n' + str(answer)
 
-database = DatabaseFacade("./Database.fs")
+database = DatabaseFacade("/home/ssteku/Database/Database.fs")
 database_root = database.dbroot
 articles = database_root['articles_db']
 print "Database size: " + str(len(articles.keys()))

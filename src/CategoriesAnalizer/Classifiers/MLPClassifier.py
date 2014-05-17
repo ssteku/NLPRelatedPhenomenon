@@ -5,29 +5,26 @@ from pybrain.tools.xml.networkreader import NetworkReader
 from pybrain.datasets import ClassificationDataSet
 from pybrain.structure.modules   import LinearLayer,StateDependentLayer,GaussianLayer,SoftmaxLayer, SigmoidLayer,LSTMLayer, TanhLayer
 from pybrain.utilities import percentError
+from BaseClassifier import BaseClassifier
 
-class MLPClassifier(object):
-    def __init__(self):
-        print "MLP"
+class MLPClassifier(BaseClassifier):
+    def __init__(self, configuration_map):
+        super(MLPClassifier, self).__init__(configuration_map)
 
     def trainClasifier(self, training_set):
         dataSet = self.__createDataset(training_set)
-
-        hiddenNodesArg = 55
-        learningRateArg = 0.004
-        momentumArg = 0.99
-        biasArg = True
-        recurrentArg = True
-        hiddenclassArg = SoftmaxLayer
-        outclassArg = SoftmaxLayer
-        epochs = 11
+        mpl_conf = self.configuration_map['mlp_classifier_config']
 
         self.__net = buildNetwork(
-            dataSet.indim, hiddenNodesArg, dataSet.outdim,
-            bias = biasArg ,recurrent = recurrentArg ,
-            hiddenclass = hiddenclassArg , outclass = outclassArg)
-        self.__trainer = BackpropTrainer(self.__net, dataSet,learningrate = learningRateArg, momentum = momentumArg, verbose = False)
-        self.__trainer.trainUntilConvergence(continueEpochs=12, maxEpochs = epochs)
+            dataSet.indim, mpl_conf['hidden_nodes'], dataSet.outdim,
+            bias = mpl_conf['biasArg'] ,recurrent = mpl_conf['recurrentArg'] ,
+            hiddenclass = mpl_conf['hiddenclassArg'] , outclass = mpl_conf['outclassArg'])
+
+        self.__trainer = BackpropTrainer(
+            self.__net, dataSet, learningrate = mpl_conf['learningRateArg'],
+            momentum = mpl_conf['momentumArg'],verbose = mpl_conf['verbose'])
+
+        self.__trainer.trainUntilConvergence(continueEpochs=12, maxEpochs = mpl_conf['epochs'])
 
     def testClasifier(self, test_set):
         classes = ['negative', 'positive']
@@ -40,7 +37,9 @@ class MLPClassifier(object):
             if rresult_class == sample[1]:
                 positive_matches += 1.0
 
-        print "testClasifier, accuracy:" +  str(positive_matches/len(test_set))
+        accuracy = positive_matches/len(test_set)
+        print "testClasifier, accuracy:" +  str(accuracy)
+        return accuracy
 
     def check_class(self, features_map):
         print "Todo check_class"

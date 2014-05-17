@@ -1,9 +1,9 @@
 from MostFrequentWordsExtractor import MostFrequentWordsExtractor
 
 class FeatureExtractor(object):
-    def __init__(self, feature_database):
+    def __init__(self, most_frequent_words):
         print "FeatureExtractor"
-        self.__feature_database = feature_database
+        self.__most_frequent_words = most_frequent_words
 
     def get_most_frequent_words_features(self, article_record, feature_name):
         levels = article_record.frequency_distribution_levels
@@ -12,10 +12,9 @@ class FeatureExtractor(object):
         else:
             feature_value = None
             raise Exception('No feature found for article')
-        levels_db = self.__feature_database['levels']
         features_for_levels = dict()
-        for level in levels_db.keys():
-            most_frequent_for_values = levels_db[level]['most_frequent']
+        for level in self.__most_frequent_words['levels'].keys():
+            most_frequent_for_values = self.__most_frequent_words['levels'][level]
             article_most_frequent = levels[level]
             articles_features_map = self.__get_most_freq_map(article_most_frequent, dict())
             features_map = self.__get_features_for_level(most_frequent_for_values)
@@ -36,7 +35,6 @@ class FeatureExtractor(object):
     def __get_features_for_level(self,  most_frequent_for_values):
         features_map = dict()
         for value in most_frequent_for_values.keys():
-            # print "Value map len : " + str(len(most_frequent_for_values[value]))
             self.__get_most_freq_map(most_frequent_for_values[value], features_map)
         return features_map
 
