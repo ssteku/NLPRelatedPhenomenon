@@ -7,14 +7,16 @@ class MaxentClassifier(BaseClassifier):
 
     def trainClasifier(self, training_set):
         algorithm = nltk.classify.MaxentClassifier.ALGORITHMS[1]
-        self.__classifier = nltk.MaxentClassifier.train(training_set, algorithm, max_iter=11)
+        classifier_config = self.configuration_map['maxent_classifier_config']
+        self.__classifier = nltk.MaxentClassifier.train(
+            training_set, algorithm,
+            max_iter=classifier_config['max_iter'])
 
     def testClasifier(self, test_set):
         print "testClasifier, accuracy:"
         accuracy =  nltk.classify.accuracy(self.__classifier, test_set)
         print accuracy
         features_number = self.configuration_map['most_informative_features_number']
-        self.__classifier.show_most_informative_features(features_number)
         return accuracy
 
 

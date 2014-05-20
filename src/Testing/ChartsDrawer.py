@@ -2,7 +2,7 @@ import pygal
 from pygal.style import BlueStyle, LightSolarizedStyle
 import datetime
 from pygal.style import Style
-
+import os
 class ChartsDrawer(object):
     def __init__(self):
         pass
@@ -12,8 +12,10 @@ class ChartsDrawer(object):
     def create_charts(self, testcase, value_range):
         results = testcase['results']
         line_chart = self.__create_line_chart(testcase)
+        newpath = "Results/" + datetime.datetime.now().strftime("%Y-%m-%d_%H-%M")
+        if not os.path.exists(newpath): os.makedirs(newpath)
 
-        chart_title = "Results/" + self.__get_datetime_string() + testcase['title']
+        chart_title = newpath + "/" + self.__get_datetime_string() + testcase['title']
         classifier_charts = self.__create_classifiers_charts_maps(results['levels']['1'].keys(), testcase)
         for level in  results['levels'].keys():
             level_line_chart = self.__create_line_chart(testcase)

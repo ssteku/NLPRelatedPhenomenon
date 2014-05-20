@@ -4,7 +4,6 @@ from RawTextFeatureExtraction.BigramsExtraction import BigramsExtractor
 from storage.ArticlePersistence import ArticlePersistence
 
 import transaction
-from RawTextFeatureExtraction.FeatureExtractor import FeatureExtractor
 from BTrees.OOBTree import OOBTree
 current_version = 1
 import langid

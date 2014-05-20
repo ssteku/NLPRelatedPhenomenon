@@ -15,7 +15,7 @@ class DefaultConf(Configuration):
             'feature_db_name_suffix' : '_words',
             'articles_database_name' : 'articles_db',
             'most_frequent_bigrams_number_per_value' : 40,
-            'most_frequent_words_number_per_value' : 5,
+            'most_frequent_words_number_per_value' : 1000,
             'minimal_training_set_size' : 100,
             'training_to_test_set_size_ratio' : 0.9,
             'extracted_bigrams_number' : 40,
@@ -25,9 +25,9 @@ class DefaultConf(Configuration):
             'language_match_minimum_probability' : 0.85,
             'article_minimum_words_number' : 200,
             'number_of_words_extracted_from_article' : 40,
-            'most_informative_features_number' : 40,
-            'filter_best_features' : False,
-            'repeat_test_count' : 100,
+            'most_informative_features_number' : 100,
+            'filter_best_features' : True,
+            'repeat_test_count' : 5,
             'classifiers' : ['MLPClassifier', 'NaiveBayesClassifier'],
             'database_structure' : {'bigrams' : [], 'levels': ['1', '2', '3']},
             'webpages_list' : [
@@ -46,5 +46,8 @@ class DefaultConf(Configuration):
                 'epochs' : 11,
                 'continueEpochs' : 12,
                 'verbose' : False
+            },
+            'maxent_classifier_config' : {
+                'max_iter' : 33
             }
         }
