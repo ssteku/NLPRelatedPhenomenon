@@ -15,7 +15,7 @@ class ChartsDrawer(object):
         newpath = "Results/" + datetime.datetime.now().strftime("%Y-%m-%d_%H-%M")
         if not os.path.exists(newpath): os.makedirs(newpath)
 
-        chart_title = newpath + "/" + self.__get_datetime_string() + testcase['title']
+        chart_title = newpath + "/" + testcase['title']
         classifier_charts = self.__create_classifiers_charts_maps(results['levels']['1'].keys(), testcase)
         for level in  results['levels'].keys():
             level_line_chart = self.__create_line_chart(testcase)

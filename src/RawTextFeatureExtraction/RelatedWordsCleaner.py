@@ -40,7 +40,6 @@ class RelatedWordsCleaner(object):
                 if similarity_level == None or shortest_path_distance == None:
                     continue;
 
-                # TODO configuration value
                 min_similarity_level = self.__configuration_map['related_words_minimum_similarity_level']
                 max_distance = self.__configuration_map['related_words_maximum_path_distance']
                 if similarity_level > min_similarity_level or shortest_path_distance < max_distance:

@@ -33,7 +33,6 @@ class TokensCleaner(object):
     def __normalize(self, tokens):
         print "Normalizing"
         wnl = nltk.WordNetLemmatizer()
-        porter = PorterStemmer()
         return [wnl.lemmatize(t.lower()) for t in tokens]
 
 

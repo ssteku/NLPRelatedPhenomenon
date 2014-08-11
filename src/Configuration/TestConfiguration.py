@@ -37,26 +37,26 @@ class TestConfiguration(Configuration):
                 #     'config' : EpochsNumberConfig()
                 # },
 
-                'maxent_iter_test' : {
-                    'description' : "Chart of relation between number of learning iterations and classification accuracy for Maxent classifier",
-                    'title' : "maxent_iter_test",
-                    'min_value' : 1,
-                    'max_value' : 20,
-                    'step' : 1,
-                    'x_title' : 'Number of training iterations for Maxent classifier',
-                    'y_title' : 'Average accuracy',
-                    'classifiers' : ['MaxentClassifier'],
-                    'param_name' : ['maxent_classifier_config', 'max_iter'],
-                    'results' : {
-                        'levels' : {
-                            '1' : {},
-                            '2' : {},
-                            '3' : {},
-                        },
-                        'bigrams' : {}
-                    },
-                    'config' : MaxentItersConfig()
-                },
+                # 'maxent_iter_test' : {
+                #     'description' : "Chart of relation between number of learning iterations and classification accuracy for Maxent classifier",
+                #     'title' : "maxent_iter_test",
+                #     'min_value' : 1,
+                #     'max_value' : 20,
+                #     'step' : 1,
+                #     'x_title' : 'Number of training iterations for Maxent classifier',
+                #     'y_title' : 'Average accuracy',
+                #     'classifiers' : ['MaxentClassifier'],
+                #     'param_name' : ['maxent_classifier_config', 'max_iter'],
+                #     'results' : {
+                #         'levels' : {
+                #             '1' : {},
+                #             '2' : {},
+                #             '3' : {},
+                #         },
+                #         'bigrams' : {}
+                #     },
+                #     'config' : MaxentItersConfig()
+                # },
 
                 # 'most_frequent_words_number_per_value test' : {
                 #     'description' : "Chart of relation between number of most frequent words used as a feature vector and accuracy",
