@@ -1,5 +1,5 @@
-from FeatureWordsDatabaseUpdater import FeatureWordsDatabaseUpdater
-from MostFrequentWordsExtractor import MostFrequentWordsExtractor
+from src.CategoriesAnalizer.FeatureWordsDatabaseUpdater import FeatureWordsDatabaseUpdater
+from src.CategoriesAnalizer.MostFrequentWordsExtractor import MostFrequentWordsExtractor
 class FeatureAnalizer(object):
     def __init__(self, database, feature, values, configuration_map):
         self.database_root = database.dbroot

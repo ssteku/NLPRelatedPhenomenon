@@ -1,11 +1,9 @@
-from pybrain.tools.shortcuts import buildNetwork
-from pybrain.supervised import BackpropTrainer
-from pybrain.tools.xml.networkwriter import NetworkWriter
-from pybrain.tools.xml.networkreader import NetworkReader
-from pybrain.datasets import ClassificationDataSet
-from pybrain.structure.modules   import LinearLayer,StateDependentLayer,GaussianLayer,SoftmaxLayer, SigmoidLayer,LSTMLayer, TanhLayer
-from pybrain.utilities import percentError
-from BaseClassifier import BaseClassifier
+from pybrain3.datasets import ClassificationDataSet
+from pybrain3.supervised import BackpropTrainer
+from pybrain3.tools.shortcuts import buildNetwork
+
+from src.CategoriesAnalizer.Classifiers.BaseClassifier import BaseClassifier
+
 
 class MLPClassifier(BaseClassifier):
     def __init__(self, configuration_map):
@@ -38,11 +36,11 @@ class MLPClassifier(BaseClassifier):
                 positive_matches += 1.0
 
         accuracy = positive_matches/len(test_set)
-        print "testClasifier, accuracy:" +  str(accuracy)
+        print("testClasifier, accuracy:" + str(accuracy))
         return accuracy
 
     def check_class(self, features_map):
-        print "Todo check_class"
+        print("Todo check_class")
 
     def __createDataset(self, training_set):
         training_map = training_set[0]

@@ -1,8 +1,10 @@
-from FeatureExtractor import FeatureExtractor
-from Classifiers.NaiveBayesClassifier import NaiveBayesClassifier
+from src.CategoriesAnalizer.Classifiers.NaiveBayesClassifier import NaiveBayesClassifier
+from src.CategoriesAnalizer.FeatureExtractor import FeatureExtractor
+
+
 class TrainingSetGenerator(object):
     def __init__(self, feature_name, configuration_map):
-        print "Set gen"
+        print("Set gen")
         self.feature_name = feature_name
         self.__configuration_map = configuration_map
 

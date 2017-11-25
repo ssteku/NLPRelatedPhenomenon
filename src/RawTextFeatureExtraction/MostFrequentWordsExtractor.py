@@ -1,7 +1,6 @@
-import nltk
 from nltk import FreqDist
 
-from TokensCleaner import TokensCleaner
+from src.RawTextFeatureExtraction.TokensCleaner import TokensCleaner
 
 
 class MostFrequentWordsExtractor(TokensCleaner):

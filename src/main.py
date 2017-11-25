@@ -1,8 +1,8 @@
-from FeatureAnalisys import FeatureAnalisys
-from Configuration.DefaultConf import DefaultConf
-from Configuration.TestConfiguration import TestConfiguration
-from Testing.Tester import Tester
-from storage.DatabaseFacade import DatabaseFacade
+from src.Configuration.DefaultConf import DefaultConf
+from src.Configuration.TestConfiguration import TestConfiguration
+from src.FeatureAnalisys import FeatureAnalisys
+from src.Testing.Tester import Tester
+from src.storage.DatabaseFacade import DatabaseFacade
 
 test_conf = TestConfiguration().get_configuration_map()
 database = DatabaseFacade(DefaultConf().get_configuration_map()['database_path'])

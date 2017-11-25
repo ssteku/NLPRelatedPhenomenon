@@ -1,8 +1,7 @@
-from MostFrequentWordsExtractor import MostFrequentWordsExtractor
 
 class FeatureExtractor(object):
     def __init__(self, most_frequent_words):
-        print "FeatureExtractor"
+        print("FeatureExtractor")
         self.__most_frequent_words = most_frequent_words
 
     def get_most_frequent_words_features(self, article_record, feature_name):

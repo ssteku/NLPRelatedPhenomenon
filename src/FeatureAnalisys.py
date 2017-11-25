@@ -1,9 +1,9 @@
-from WebReader.WebReader import WebReader
-from CategoriesAnalizer.FeatureAnalizer import FeatureAnalizer
-import urllib2
 from BTrees.OOBTree import OOBTree
-import re
-from CategoriesAnalizer.Classifier import Classifier
+
+from src.CategoriesAnalizer.Classifier import Classifier
+from src.CategoriesAnalizer.FeatureAnalizer import FeatureAnalizer
+from src.WebReader.WebReader import WebReader
+
 
 class FeatureAnalisys(object):
     def __init__(self, feature_name, feature_values, database):
@@ -28,7 +28,7 @@ class FeatureAnalisys(object):
         links = configuration_map['webpages_list']
 
         for link in links:
-            print "Extracting information from link: ", link
+            print("Extracting information from link: ", link)
             reader.extract_all_articles(link)
 
 

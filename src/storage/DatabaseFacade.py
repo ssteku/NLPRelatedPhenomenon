@@ -1,6 +1,6 @@
-from ZODB import FileStorage, DB
-import transaction
 from BTrees.OOBTree import OOBTree
+from ZODB import FileStorage, DB
+
 
 class DatabaseFacade(object):
     def __init__(self, path):
@@ -8,7 +8,7 @@ class DatabaseFacade(object):
         self.db = DB(self.storage)
         self.connection = self.db.open()
         self.dbroot = self.connection.root()
-        if not self.dbroot.has_key('test_results'):
+        if 'test_results' not in self.dbroot:
             self.dbroot['test_results'] = OOBTree()
 
 def close(self):

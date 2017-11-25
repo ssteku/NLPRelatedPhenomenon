@@ -1,11 +1,13 @@
-from Configuration import Configuration
-from pybrain.structure.modules   import LinearLayer,StateDependentLayer,GaussianLayer,SoftmaxLayer, SigmoidLayer,LSTMLayer, TanhLayer
-from SetSizeConfig import SetSizeConfig
-from EpochsNumberConfig import EpochsNumberConfig
-from MostFreqWordsConfig import MostFreqWordsConfig
-from MostInformativeFeaturesConfig import MostInformativeFeaturesConfig
-from MaxentItersConfig import MaxentItersConfig
-class TestConfiguration(Configuration):
+from src.Configuration import Configuration
+
+
+# from pybrain.structure.modules   import LinearLayer,StateDependentLayer,GaussianLayer,SoftmaxLayer, SigmoidLayer,LSTMLayer, TanhLayer
+# from SetSizeConfig import SetSizeConfig
+# from src.Configuration.EpochsNumberConfig import EpochsNumberConfig
+# from MostFreqWordsConfig import MostFreqWordsConfig
+# from MostInformativeFeaturesConfig import MostInformativeFeaturesConfig
+# from MaxentItersConfig import MaxentItersConfig
+class TestConfiguration(Configuration.Configuration):
     def __init__(self):
         super(TestConfiguration, self).__init__()
         self.__create_test_conf()

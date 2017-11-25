@@ -1,10 +1,10 @@
-from RawTextFeatureExtraction.MostFrequentWordsExtractor import MostFrequentWordsExtractor
-from ExtractorFacade import ExtractorFacade
-from RawTextFeatureExtraction.BigramsExtraction import BigramsExtractor
-from storage.ArticlePersistence import ArticlePersistence
-
 import transaction
-from BTrees.OOBTree import OOBTree
+
+from src.RawTextFeatureExtraction.BigramsExtraction import BigramsExtractor
+from src.RawTextFeatureExtraction.MostFrequentWordsExtractor import MostFrequentWordsExtractor
+from src.WebReader.ExtractorFacade import ExtractorFacade
+from src.storage.ArticlePersistence import ArticlePersistence
+
 current_version = 1
 import langid
 class WebReader(object):
@@ -14,8 +14,8 @@ class WebReader(object):
     def extract_all_articles(self, url):
 
         article_db = self.database
-        freq = MostFrequentWordsExtractor(configuration_map)
-        bigrams_extractor = BigramsExtractor()
+        freq = MostFrequentWordsExtractor(self.__configuration_map)
+        bigrams_extractor = BigramsExtractor(self.__configuration_map)
         extractor = ExtractorFacade(url)
         articles = extractor.get_article_list()
         # self.__print_article_list(articles)
@@ -24,7 +24,7 @@ class WebReader(object):
             if self.__article_in_english(article):
                 self.__extract_article(article, article_db, freq, bigrams_extractor)
             else:
-                print "----------> Article: " + article.title + " is not in english <------------"
+                print("----------> Article: " + article.title + " is not in english <------------")
 
     # def extract_features_for_all_articles(self, url, feature_database):
     #     extractor = FeatureExtractor(feature_database)
@@ -41,14 +41,14 @@ class WebReader(object):
         return result[0] == 'en' and result[1] > minimum_probability
 
     def __print_article_list(self, article_list):
-        print "--------------Parsing articles---------------"
+        print("--------------Parsing articles---------------")
         for article in article_list:
-            print article.title
-        print "---------------------------------------------"
+            print(article.title)
+        print("---------------------------------------------")
 
     def __extract_article(self, article, article_db, freq, bigrams_extractor):
         if self.__should_be_stored(article, article_db):
-            print "Processing article: " + article.title
+            print("Processing article: " + article.title)
 
             number_of_words_from_article = self.__configuration_map['number_of_words_extracted_from_article']
             freq_words_levels = freq.get_most_frequent(article.text, number = number_of_words_from_article)
@@ -59,8 +59,8 @@ class WebReader(object):
 
             transaction.commit()
         else:
-            print "Article : " + article.title + " is already in DB or is too short : "
-            print str(len(article.text))
+            print("Article : " + article.title + " is already in DB or is too short : ")
+            print(str(len(article.text)))
 
 
 
@@ -74,7 +74,7 @@ class WebReader(object):
             article.parse()
             article.nlp()
         except Exception:
-            print "File parsing failed"
+            print("File parsing failed")
 
     def __create_article_record(self, freq_words_levels, bigrams, article):
         article_record = ArticlePersistence()

@@ -1,5 +1,7 @@
 import nltk
-from BaseClassifier import BaseClassifier
+
+from src.CategoriesAnalizer.Classifiers.BaseClassifier import BaseClassifier
+
 
 class MaxentClassifier(BaseClassifier):
     def __init__(self, configuration_map):
@@ -13,12 +15,12 @@ class MaxentClassifier(BaseClassifier):
             max_iter=classifier_config['max_iter'])
 
     def testClasifier(self, test_set):
-        print "testClasifier, accuracy:"
+        print("testClasifier, accuracy:")
         accuracy =  nltk.classify.accuracy(self.__classifier, test_set)
-        print accuracy
+        print(accuracy)
         features_number = self.configuration_map['most_informative_features_number']
         return accuracy
 
 
     def check_class(self, features_map):
-        print "Todo check_class"
+        print("Todo check_class")

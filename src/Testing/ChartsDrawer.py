@@ -1,8 +1,10 @@
-import pygal
-from pygal.style import BlueStyle, LightSolarizedStyle
 import datetime
-from pygal.style import Style
 import os
+
+import pygal
+from pygal.style import Style
+
+
 class ChartsDrawer(object):
     def __init__(self):
         pass
@@ -24,7 +26,7 @@ class ChartsDrawer(object):
                 self.__set_chart_properties(level_line_chart, value_range, testcase)
                 self.__set_chart_properties(classifier_charts[value_class], value_range, testcase)
                 series_string = "Processing level: " + level + ', classifier: ' + value_class
-                print "Processing level: " + level + ' , classifier: ' + value_class
+                print("Processing level: " + level + ' , classifier: ' + value_class)
 
                 classifier_charts[value_class].add(series_string, results['levels'][level][value_class])
 
@@ -71,6 +73,6 @@ class ChartsDrawer(object):
             label_font_size=16)
 
     def __render_chart(self, chart, title):
-        print "Rendering chart: " + title
+        print("Rendering chart: " + title)
         chart.render_to_png(title + '.png')
         chart.render_to_file(title)

@@ -1,7 +1,9 @@
-from Configuration import Configuration
-from pybrain.structure.modules   import LinearLayer,StateDependentLayer,GaussianLayer,SoftmaxLayer, SigmoidLayer,LSTMLayer, TanhLayer
+from pybrain3.structure.modules import SoftmaxLayer
 
-class DefaultConf(Configuration):
+from src.Configuration import Configuration
+
+
+class DefaultConf(Configuration.Configuration):
     def __init__(self):
         super(DefaultConf, self).__init__()
         self.__create_default_conf()
@@ -11,7 +13,7 @@ class DefaultConf(Configuration):
 
     def __create_default_conf(self):
         self.default_conf = {
-            'database_path' : '/home/ssteku/Database/Database.fs',
+            'database_path': '/home/ssteku/PycharmProjects/NLPRelatedPhenomenon/Database.fs',
             'feature_db_name_suffix' : '_words',
             'articles_database_name' : 'articles_db',
             'most_frequent_bigrams_number_per_value' : 40,

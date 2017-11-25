@@ -1,5 +1,3 @@
-from BTrees.OOBTree import OOBTree
-import transaction
 class FeatureWordsDatabaseUpdater(object):
     def __init__(self, database, database_structure):
         self.database_root = database
@@ -33,9 +31,9 @@ class FeatureWordsDatabaseUpdater(object):
 
     def __fill_database_with_new_words(self, words_database, articles_db, feature_name):
         articles = self.__extract_new_articles_keys(articles_db, feature_name)
-        print "Articles to be proceeded: " + str(len(articles))
+        print("Articles to be proceeded: " + str(len(articles)))
         for key in articles:
-            # print "Updating article : " + key
+            # print("Updating article : " + key
             self.__extract_bigram_words(articles_db[key], words_database['bigrams'], feature_name)
             self.__extract_level_words(articles_db[key], words_database['levels'], '1', feature_name)
             self.__extract_level_words(articles_db[key], words_database['levels'], '2', feature_name)
@@ -47,7 +45,7 @@ class FeatureWordsDatabaseUpdater(object):
         for key in article_db.keys():
             if hasattr(article_db[key], feature_name):
                 articles_with_feature.append(key)
-        print 'articles_with_feature len: ' + str(len(articles_with_feature))
+        print('articles_with_feature len: ' + str(len(articles_with_feature)))
         return articles_with_feature
 
     def __extract_bigram_words(self, article, bigrams, feature_name):

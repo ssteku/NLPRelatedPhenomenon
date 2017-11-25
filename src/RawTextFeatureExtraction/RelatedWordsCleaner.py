@@ -1,9 +1,8 @@
-from sets import Set
 from nltk.corpus import wordnet as wn
 
 class RelatedWordsCleaner(object):
     def __init__(self, configuration_map):
-        self__configuration_map = configuration_map
+        self.__configuration_map = configuration_map
 
     def get_cleaned_tokens(self, tokens):
         final_tokens = []

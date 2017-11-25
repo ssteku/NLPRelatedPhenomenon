@@ -1,5 +1,7 @@
-from Configuration import Configuration
-from pybrain.structure.modules   import LinearLayer,StateDependentLayer,GaussianLayer,SoftmaxLayer, SigmoidLayer,LSTMLayer, TanhLayer
+from pybrain3.structure.modules import SoftmaxLayer
+
+from src.Configuration import Configuration
+
 
 class EpochsNumberConfig(Configuration):
     def __init__(self):
